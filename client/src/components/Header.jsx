@@ -11,7 +11,13 @@ const Header = () => {
           <img src={assets.star_icon} alt="" className='w-2.5' />
         </div>
         <h1 className='text-3xl sm:text-6xl  font-semibold text-gray-700 sm:leading-16'>
-          Your Own <span className='text-primary'>Blogging</span>  <br /> platform</h1>
+          Your Own<span className='text-primary'>Blogging</span>  <br /> platform</h1>
+
+          <p className='my-6 sm:my-8 max-w-2xl m-auto max-sm:text-xs'>This is your space to think out loud, to share what matters and to write without filters.Whether it's one word or a thousand, your story starts right here.</p>
+      <form className='flex justify-between max-w-lg max-sm:scale-75 mx-auto border border-gray-300 bg-white rounded overflow-hidden'>
+        <input type ="text" placeholder='Search for blogs' required className='w-full pl-4 outline-none'/>
+        <button type ="submit" className='bg-primary py-2 px-8 text-white m-1.5 rounded hover:scale-105 transition-all cursor-pointer'>Search</button>
+      </form>
       </div>
       <img src={assets.gradientBackground} alt="" className='absolute -top-50 -z-1 opacity-100' />
     </div>
